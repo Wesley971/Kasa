@@ -1,0 +1,27 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: yellow;
+    align-items: center;
+    img{
+        height: 30px;
+    }
+    nav{
+        ul{
+            display: flex;
+            justify-content: center;
+            a{
+                text-decoration: none;
+                
+                &.underline{
+                    text-decoration: underline;
+                }
+            }
+            li{
+                margin: 0 10px;
+                list-style: none;
+            }
+        }
+        
+    }
+}
