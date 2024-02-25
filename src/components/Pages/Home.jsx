@@ -8,7 +8,7 @@ const Home = () => {
                 <h1>Chez vous, partout et ailleurs</h1>
             </div>
             <div>
-                <div className="galerry">
+                <div className="gallery">
                     <Thump location={location} />
                 </div>
             </div>
