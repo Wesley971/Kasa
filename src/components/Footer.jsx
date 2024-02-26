@@ -1,4 +1,4 @@
-import img from "./assets/images/LogoFooter.png"
+import img from "../assets/images/LogoFooter.png"
 
 const Footer = () => {
     return (
