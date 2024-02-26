@@ -1,4 +1,6 @@
 @use "./sass/App.scss";
-@use "./sass/header.scss";
-@use "./sass/home.scss";
-@use "./sass/thump.scss";
+@use "./sass/layout/header.scss";
+@use "./sass/pages/home.scss";
+@use "./sass/components/thump.scss";
+@use "./sass/pages/about.scss";
+@use "./sass/components/bannerIMG.scss"
