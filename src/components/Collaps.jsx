@@ -1,7 +1,7 @@
 import { Component } from 'react';
 import PropTypes from 'prop-types';
 
-class Collapsis extends Component {
+class Collaps extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -21,7 +21,8 @@ class Collapsis extends Component {
         return (
             <div className='collapsContent'>
                 <h2 onClick={this.toggleSection} className='headCollaps'>
-                     {title}
+                    {title}
+                    {isOpen ? <img src="src\assets\images\arrow-up.svg" alt="arrow" /> : <img src="src\assets\images\arrow-down.svg" alt="arrow" />}
                 </h2>
                 {isOpen && (
                     <div className='headCollapsContent'>
@@ -33,10 +34,9 @@ class Collapsis extends Component {
     }
 }
 
-Collapsis.propTypes = {
+Collaps.propTypes = {
     title: PropTypes.string.isRequired,
     content: PropTypes.string.isRequired
 };
 
-export default Collapsis;
-
+export default Collaps;

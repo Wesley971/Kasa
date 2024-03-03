@@ -1,6 +1,6 @@
 import BannerAbout from "../components/BannerAbout";
 import collapsJson from "../data/collaps.json";
-import Collapsis from "../components/Collapsis";
+import Collapsis from "../components/Collaps";
 
 const About = () => {
     return (

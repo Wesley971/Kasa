@@ -9,16 +9,23 @@
     h1{
         display: flex;
         justify-content: center;
-        font-size: 250px;
+        font-size: 18rem;
+        padding-top: 230px ;
+        margin: 0;
     }
     p{
         display: flex;
         justify-content: center;
-        font-size: 36px;
+        font-size: 2rem;
+        padding-bottom: 90px;
+        font-weight: 500;
         
     }
     li{
+        font-weight: 500;
+        padding-bottom: 90px;
         list-style: none;
         color: black;
+        
     }
 }
