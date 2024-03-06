@@ -1,45 +1,35 @@
-import { Component } from 'react';
-import PropTypes from 'prop-types';
+import { useState } from "react";
+import PropTypes from "prop-types";
+import arrow from "../assets/images/arrow.svg";
 import "../sass/components/collaps.scss";
 
-class Collaps extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            isOpen: false
-        };
-    }
+const Collaps = ({ title, content }) => {
+  const [isOpen, setIsOpen] = useState(false);
 
-    toggleSection = () => {
-        this.setState(prevState => ({
-            isOpen: !prevState.isOpen
-        }));
-    };
+  const toggleSection = () => {
+    setIsOpen(!isOpen);
+  };
 
-    render() {
-        const { isOpen } = this.state;
-        const { title, content } = this.props;
-        return (
-            <div className="collapsContent">
-                <h2 onClick={this.toggleSection} className='headCollaps'>
-                    {title}
-                    <img 
-                        src="src/assets/images/arrow-up.svg" 
-                        alt="arrow" 
-                        className={`arrow ${isOpen ? 'open' : ''}`} 
-                    />
-                </h2>
-                <div className={`headCollapsContent ${isOpen ? 'open' : ''}`}>
-                    <p>{content}</p>
-                </div>
-            </div>
-        );
-    }
-}
+  return (
+    <div className="collapsContent">
+      <h2 onClick={toggleSection} className={`headCollaps ${isOpen ? 'open' : ''}`}>
+        {title}
+        <img 
+          src={arrow} 
+          alt="arrow" 
+          className={`arrow ${isOpen ? 'open' : ''}`} 
+        />
+      </h2>
+      <div className={`headCollapsContent ${isOpen ? 'open' : ''}`}>
+        <p>{content}</p>
+      </div>
+    </div>
+  );
+};
 
 Collaps.propTypes = {
-    title: PropTypes.string.isRequired,
-    content: PropTypes.string.isRequired
+  title: PropTypes.string.isRequired,
+  content: PropTypes.string // Ne pas marquer comme obligatoire
 };
 
 export default Collaps;

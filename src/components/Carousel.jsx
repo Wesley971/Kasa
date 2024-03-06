@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
-import leftArrow from 'src/assets/images/arrowLeft.svg';
-import rightArrow from 'src/assets/images/arrowRight.svg';
+import leftArrow from '../assets/images/arrowLeft.svg';
+import rightArrow from '../assets/images/arrowRight.svg';
 
 const Carousel = ({ slides }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -17,11 +17,11 @@ const Carousel = ({ slides }) => {
   return (
     <div className="carousel">
       <button onClick={prevSlide}>
-        <img src={leftArrow} alt="Previous" />
+        <img src={leftArrow} alt="Previous" className="previous" />
       </button>
-      <img src={slides[currentIndex]} alt={`Slide ${currentIndex + 1}`} />
+      <img src={slides[currentIndex]} alt={`Slide ${currentIndex + 1}`} className="carouselImage" />
       <button onClick={nextSlide}>
-        <img src={rightArrow} alt="Next" />
+        <img src={rightArrow} alt="Next" className="next" />
       </button>
     </div>
   );

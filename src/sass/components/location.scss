@@ -1,8 +1,127 @@
-.pictures{
-    border: 1px solid black;
-    img{
-        width: 200px;
-        height: 200px;
-        
+.locationPage {
+  font-family: "Montserrat";
+  .carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+
+    button {
+      background: none;
+      border: none;
+      position: absolute;
+      .previous {
+        position: relative;
+        right: 565px;
+      }
+      .next {
+        position: relative;
+        left: 565px;
+      }
     }
+  }
+  img {
+    border-radius: 15px;
+
+    object-fit: cover;
+  }
+  .carouselImage {
+    width: 1240px;
+    height: 415px;
+  }
 }
+.locationTitlePlace {
+  position: relative;
+  left: 90px;
+  h2 {
+    color: #ff6060;
+    font-weight: 500;
+    font-size: 36px;
+  }
+  h3 {
+    font-weight: 500;
+    font-size: 18px;
+    position: relative;
+          bottom: 30px;
+          left: 2px;
+  }
+  .containerTags {
+    position: relative;
+    bottom: 20px;
+    .tags {
+      background-color: #ff6060;
+      font-weight: 700;
+      font-size: 14px;
+      color: white;
+      padding: 5px;
+      margin: 5px;
+      border-radius: 15px;
+    }
+  }
+}
+
+
+  .locationMainInfo {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+    .hostRating {
+      position: relative;
+      right: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+
+      
+    }
+    .host{
+        display: flex;
+        position: relative;
+        left: 50px;
+       
+
+        h3{
+          display: flex;
+          align-items: center;
+          font-weight: 500;
+          font-size: 18px;
+          color: #ff6060;
+          width: 20%;
+          margin-right: 15px;
+        } 
+        img{
+          padding: 10px;
+          border-radius: 50%; 
+          width: 28%;
+         }
+      }
+      .rating{
+        position: relative;
+        right: 25px;
+      }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .locationSideInfo {
+    display: flex;
+    position: relative;
+    left: 94px;
+
+    .collapsContent{
+      flex-direction: row;
+      width: 100%;
+      
+      .headCollaps{
+        width: 100%;
+      }
+      
+    }
+  }
