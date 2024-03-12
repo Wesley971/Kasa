@@ -44,11 +44,13 @@ const Location = () => {
           </div>
         </div>
         <div className="locationSideInfo">
-          <Collaps title="Description" content={location.description}></Collaps>
+          <Collaps title="Description">
+            <p>{location.description}</p>
+          </Collaps>
           <Collaps title="Equipement">
             <ul>
               {location.equipments.map((equip, index) => (
-                <li key={index}>{equip}</li>
+                <li key={++index}>{equip}</li>
               ))}
             </ul>
           </Collaps>

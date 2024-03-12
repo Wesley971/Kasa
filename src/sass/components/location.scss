@@ -10,6 +10,7 @@
       background: none;
       border: none;
       position: absolute;
+      cursor: pointer;
       .previous {
         position: relative;
         right: 565px;
@@ -28,6 +29,10 @@
   .carouselImage {
     width: 1240px;
     height: 415px;
+    @media screen and (max-width: 768px){
+      width: 335px;
+      height: 255px;
+    }
   }
 }
 .locationTitlePlace {
@@ -53,7 +58,7 @@
       font-weight: 700;
       font-size: 14px;
       color: white;
-      padding: 5px;
+      padding: 5px 15px 5px 15px;
       margin: 5px;
       border-radius: 15px;
     }
@@ -113,14 +118,17 @@
   .locationSideInfo {
     display: flex;
     position: relative;
-    left: 94px;
+    
 
     .collapsContent{
-      flex-direction: row;
+      
       width: 100%;
       
       .headCollaps{
-        width: 100%;
+        width: 85%;
+      }
+      p{
+        display: contents;
       }
       
     }

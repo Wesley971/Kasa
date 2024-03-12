@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import arrow from "../assets/images/arrow.svg";
 import "../sass/components/collaps.scss";
 
-const Collaps = ({ title, content }) => {
+const Collaps = ({ title, children }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleSection = () => {
@@ -21,7 +21,7 @@ const Collaps = ({ title, content }) => {
         />
       </h2>
       <div className={`headCollapsContent ${isOpen ? 'open' : ''}`}>
-        <p>{content}</p>
+        {children}
       </div>
     </div>
   );
@@ -29,7 +29,7 @@ const Collaps = ({ title, content }) => {
 
 Collaps.propTypes = {
   title: PropTypes.string.isRequired,
-  content: PropTypes.string // Ne pas marquer comme obligatoire
+  children: PropTypes.element.isRequired 
 };
 
 export default Collaps;

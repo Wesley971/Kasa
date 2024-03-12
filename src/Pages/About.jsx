@@ -7,10 +7,10 @@ const About = () => {
         <div className="about">
             <BannerAbout />
             {collapsJson.map((collaps, index) => (
-                <Collaps key={index} title={collaps.title} content={collaps.text}>
+                <Collaps key={index} title={collaps.title} ><p>{collaps.text}</p>
                 </Collaps>
             ))}
-            <p>Voici la page À propos</p>
+            
         </div>
     );
 };
