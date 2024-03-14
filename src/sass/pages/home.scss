@@ -6,3 +6,13 @@
   font-family: "Montserrat"
 
 }
+.AppContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 122vh; /* Assurez-vous que le conteneur s'étend sur toute la hauteur de la fenêtre */
+}
+
+.Content {
+  flex: 1; /* Le contenu principal prendra tout l'espace disponible */
+}
+

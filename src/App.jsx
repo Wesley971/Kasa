@@ -8,16 +8,21 @@ import Location from "./Pages/Location";
 const App = () => {
   return (
     <BrowserRouter>
-    <Header />
-      <Routes>
-        <Route path="/" element={<Accueil />} />
-        <Route path="/about" element={<APropos />} />
-        <Route path="location/:id" element={<Location />} />
-        <Route path="*" element={<Error />} />
-      </Routes>
-      <Footer />
+      <div className="AppContainer">
+        <Header />
+        <div className="Content">
+          <Routes>
+            <Route path="/" element={<Accueil />} />
+            <Route path="/about" element={<APropos />} />
+            <Route path="location/:id" element={<Location />} />
+            <Route path="*" element={<Error />} />
+          </Routes>
+        </div>
+        <Footer />
+      </div>
     </BrowserRouter>
   );
 };
 
 export default App;
+

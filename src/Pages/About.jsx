@@ -1,11 +1,11 @@
-import BannerAbout from "../components/BannerAbout";
 import collapsJson from "../data/collaps.json";
 import Collaps from "../components/Collaps";
+import { AboutPage } from "../components/Banner";
 
 const About = () => {
     return (
         <div className="about">
-            <BannerAbout />
+            <AboutPage />
             {collapsJson.map((collaps, index) => (
                 <Collaps key={index} title={collaps.title} ><p>{collaps.text}</p>
                 </Collaps>

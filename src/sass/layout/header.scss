@@ -1,17 +1,22 @@
-.header{
+
+header{
     display: flex;
     justify-content: space-between;
-    background-color: grey;
     align-items: center;
     margin-top: 15px;
     margin-bottom: 50px;
     img{
         height: 60px;
+        @media screen and (max-width: 768px){
+            height: 70px;
+          }
+        
     }
     nav{
         ul{
             display: flex;
             justify-content: center;
+            align-items: center;
             a{
                 text-decoration: none;
                 color:black;
@@ -21,6 +26,9 @@
                 &.underline{
                     text-decoration: underline;
                 }
+                @media screen and (max-width: 768px){
+                    font-size: 13px;
+                  }
             }
             li{
                 margin: 0 10px;

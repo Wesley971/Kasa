@@ -2,7 +2,7 @@ import logoKasa from "../assets/images/Logo.png";
 import { NavLink } from "react-router-dom";
 const Header = () => {
   return (
-    <div className="header">
+    <header>
       <img src={logoKasa} alt="Kasa Logo" />
       <nav>
         <ul>
@@ -14,7 +14,7 @@ const Header = () => {
           </NavLink>
         </ul>
       </nav>
-    </div>
+    </header>
   );
 };
 

@@ -1,10 +1,10 @@
 
-import BannerHome from "../components/BannerIMG";
+import { HomePage } from "../components/Banner";
 import Gallery from "../components/Gallery";
 const Home = () => {
     return (
         <div className="home">
-            <BannerHome />
+            <HomePage />
             <div>
                 <Gallery />
             </div>
