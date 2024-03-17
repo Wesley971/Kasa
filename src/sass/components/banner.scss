@@ -16,15 +16,15 @@
     }
     h1{
         position: absolute;
-        top: 18%;
+        top: 248px;
         left: 50%;
         transform: translate(-50%,-50%);
         color: white;
-        font-size: 40px;
+        
         @media screen and (max-width: 768px){
             font-size: 26px;
             left: 40%;
-            top: 20%;
+            top: 21%;
           }
             }
 

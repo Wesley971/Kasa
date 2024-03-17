@@ -16,13 +16,21 @@ const Carousel = ({ slides }) => {
 
   return (
     <div className="carousel">
-      <button onClick={prevSlide}>
-        <img src={leftArrow} alt="Previous" className="previous" />
-      </button>
+      {/* si slides supérieur a 1 */}
+      {slides.length > 1 && (
+        <button onClick={prevSlide}>
+          <img src={leftArrow} alt="Previous" className="previous" />
+        </button>
+      )}
       <img src={slides[currentIndex]} alt={`Slide ${currentIndex + 1}`} className="carouselImage" />
-      <button onClick={nextSlide}>
-        <img src={rightArrow} alt="Next" className="next" />
-      </button>
+      {slides.length > 1 && (
+        <button onClick={nextSlide}>
+          <img src={rightArrow} alt="Next" className="next" />
+        </button>
+      )}
+      {slides.length > 1 && (
+        <span className="slideNumber">{`${currentIndex + 1} / ${slides.length}`}</span>
+      )}
     </div>
   );
 };
