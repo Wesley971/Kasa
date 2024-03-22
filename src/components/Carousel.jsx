@@ -31,7 +31,7 @@ const Carousel = ({ slides }) => {
           <img src={leftArrow} alt="Previous" className="previous" />
         </button>
       )}
-      {/* Affichage de l'image du slide actuel avec l'index */}
+      {/* Affichage de l'image du slide actuel avec l'index  et Texte alternatif pour l'image, affiche "Slide" suivi du numéro du slide actuel*/}
       <img src={slides[currentIndex]} alt={`Slide ${currentIndex + 1}`} className="carouselImage" />
       {/* Vérification si le nombre de slides est supérieur à 1 */}
       {slides.length > 1 && (
