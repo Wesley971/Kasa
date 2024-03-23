@@ -1,10 +1,10 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header"; // Importation du composant Header qui sera utilisé pour afficher l'en-tête de l'application.
-import Accueil from "./Pages/Home"; // Importation du composant Accueil depuis le fichier Home.js, qui sera utilisé comme page d'accueil.
-import APropos from "./Pages/About"; // Importation du composant APropos depuis le fichier About.js, qui sera utilisé comme page À propos.
-import Error from "./Pages/Error"; // Importation du composant Error depuis le fichier Error.js, qui sera utilisé pour afficher les erreurs de routage.
+import Accueil from "./pages/Home"; // Importation du composant Accueil depuis le fichier Home.js, qui sera utilisé comme page d'accueil.
+import APropos from "./pages/About"; // Importation du composant APropos depuis le fichier About.js, qui sera utilisé comme page À propos.
+import Error from "./pages/Error"; // Importation du composant Error depuis le fichier Error.js, qui sera utilisé pour afficher les erreurs de routage.
 import Footer from "./components/Footer"; // Importation du composant Footer qui sera utilisé pour afficher le pied de page de l'application.
-import Location from "./Pages/Location"; // Importation du composant Location depuis le fichier Location.js, qui sera utilisé pour afficher les détails de l'emplacement.
+import Location from "./pages/Location"; // Importation du composant Location depuis le fichier Location.js, qui sera utilisé pour afficher les détails de l'emplacement.
 
 const App = () => { // Définition du composant fonctionnel App.
   return (

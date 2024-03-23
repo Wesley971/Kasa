@@ -6,11 +6,11 @@ import { AboutPage } from "../components/Banner"; // Importation du composant Ab
 
 const About = () => { // Définition du composant fonctionnel About.
     return (
-        <div className="about"> // Début de la division avec la classe "about", utilisée comme conteneur principal de la page About.
-            <AboutPage /> // Affichage du composant AboutPage pour afficher la bannière dans la page About.
+        <div className="about"> {/* Début de la division avec la classe "about", utilisée comme conteneur principal de la page About.*/}
+            <AboutPage /> {/* Affichage du composant AboutPage pour afficher la bannière dans la page About.*/}
 
             {collapsJson.map((collaps, index) => ( // Utilisation de la méthode map() pour parcourir chaque élément du tableau collapsJson.
-                <Collaps key={index} title={collaps.title} ><p>{collaps.text}</p> // Création d'un composant Collaps pour chaque élément de collapsJson, avec un titre et un texte spécifiques.
+                <Collaps key={index} title={collaps.title} ><p>{collaps.text}</p> {/* Création d'un composant Collaps pour chaque élément de collapsJson, avec un titre et un texte spécifiques. */}
                 </Collaps> // Fermeture du composant Collaps.
             ))}
 
