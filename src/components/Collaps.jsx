@@ -21,21 +21,18 @@ const Collaps = ({ title, children }) => {
   return (
     <div className="collapsContent">
       {/* Titre de l'élément collapsible avec gestion du clic pour basculer l'état */}
-      <h2
-        onClick={toggleSection}
-        className={`headCollaps ${isOpen ? "open" : ""}`}
-      >
+      <h2 onClick={toggleSection} className={`headCollaps ${isOpen ? 'open' : ''}`}>
         {/* Affichage du titre */}
         {title}
         {/* Image de la flèche avec gestion de la classe pour l'animation de rotation */}
-        <img
-          src={arrow}
-          alt="arrow"
-          className={`arrow ${isOpen ? "open" : ""}`}
+        <img 
+          src={arrow} 
+          alt="arrow" 
+          className={`arrow ${isOpen ? 'open' : ''}`} 
         />
       </h2>
       {/* Contenu de l'élément collapsible avec gestion de la classe pour l'animation de l'ouverture/fermeture */}
-      <div className={`headCollapsContent ${isOpen ? "open" : ""}`}>
+      <div className={`headCollapsContent ${isOpen ? 'open' : ''}`}>
         {/* Affichage du contenu de l'élément collapsible */}
         {children}
       </div>
@@ -48,8 +45,8 @@ Collaps.propTypes = {
   title: PropTypes.string.isRequired, // Le titre doit être une chaîne de caractères et est requis
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.element), // un tableau d'éléments React
-    PropTypes.node, // ou un nœud React (peut être une chaîne de caractères, un élément ou une liste d'éléments)
-  ]).isRequired, // Le contenu doit être un élément React ou un tableau d'éléments React et est requis
+    PropTypes.node // ou un nœud React (peut être une chaîne de caractères, un élément ou une liste d'éléments)
+  ]).isRequired // Le contenu doit être un élément React ou un tableau d'éléments React et est requis
 };
 
 // Export du composant Collaps
