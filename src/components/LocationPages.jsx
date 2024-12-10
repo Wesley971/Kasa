@@ -25,12 +25,12 @@ const Location = () => {
   const location = findLocationByID(id);
 
   // Rediriger vers une page d'erreur si aucun emplacement n'est trouvé
-  if (!location) {
+  // if (!location) {
     // Redirection vers "/error" si aucun emplacement n'est trouvé
-    window.location.href = "/error";
+    // window.location.href = "/error";
     // Retourne null pour ne rien afficher si aucun emplacement n'est trouvé
-    return null;
-  }
+    // return null;
+  // }
 
   // Rendu du composant
   return (
