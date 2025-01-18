@@ -14,7 +14,7 @@ const App = () => { // Définition du composant fonctionnel App.
         <div className="Content"> {/* Division pour le contenu principal de l'application. */}
           <Routes> {/* Utilisation du composant Routes pour définir les routes de l'application. */}
             <Route path="/" element={<Accueil />} /> {/* Route pour l'URL racine de l'application, affichant le composant Accueil. */}
-            <Route path="/about" element={<APropos />} /> {/* Route pour l'URL "/about", affichant le composant APropos. */}
+            <Route path="/About" element={<APropos />} /> {/* Route pour l'URL "/about", affichant le composant APropos. */}
             <Route path="location/:id" element={<Location />} /> {/* Route dynamique pour les détails de l'emplacement, affichant le composant Location avec un ID spécifique. */}
             <Route path="*" element={<Error />} /> {/* Route pour toutes les autres URL, affichant le composant Error en cas d'erreur de routage. */}
           </Routes>
